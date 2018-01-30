@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+#DOC: https://www.rabbitmq.com/tutorials/tutorial-one-python.html
+
 import pika #pika is the name for rabbit Pyhton client
 from time import sleep
 

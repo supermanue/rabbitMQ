@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+#DOC: https://www.rabbitmq.com/tutorials/tutorial-two-python.html
+
 import pika
 import sys
 
