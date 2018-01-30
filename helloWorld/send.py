@@ -19,6 +19,3 @@ print(" [x] Sent 'Hello World!'")
 
 #close connection
 connection.close()
-
-while True:
-    sleep(1)

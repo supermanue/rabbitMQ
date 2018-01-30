@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 import pika
+import sys
+
+name=sys.argv[1]
 
 connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
 channel = connection.channel()
@@ -20,10 +23,10 @@ queue_name = result.method.queue
 channel.queue_bind(exchange='logs',
                    queue=queue_name)
 
-print(' [*] Waiting for logs. To exit press CTRL+C')
+print(' [*] ' + name + ': Waiting for logs. To exit press CTRL+C')
 
 def callback(ch, method, properties, body):
-    print(" [x] %r" % body)
+    print(" [x] " + name + ": " + str(body))
 
 
 #y lo de siempre, cuando llega un mensaje se ejecuta "callback"

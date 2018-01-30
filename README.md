@@ -27,3 +27,4 @@ https://www.rabbitmq.com/getstarted.html
 ## TODO
 
 - overhead analysis. Any article?
+- scalability?
